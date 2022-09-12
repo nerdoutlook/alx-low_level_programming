@@ -11,6 +11,10 @@
  *
  * Return: Return zero
  */
+
+/*
+ * Main - Function to determine if random number is positive or negative
+*/
 int main(void)
 {
 	int n;
