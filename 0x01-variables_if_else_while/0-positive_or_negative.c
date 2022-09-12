@@ -9,12 +9,10 @@
  *Main - Function to determine if random number is positive or negative
  *@void
  *
+ * Description: This function generates a random number and determines
+ * it the number is positive, negative or is zero
  * Return: Return zero
  */
-
-/*
- *main - Function to determine if random number is positive or negative
-*/
 int main(void)
 {
 	int n;
