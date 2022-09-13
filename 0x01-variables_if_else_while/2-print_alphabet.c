@@ -8,8 +8,8 @@ int main()
 	{
 		putchar(ch);
 		ch++;
-		putchar(nl);
 	}
+	putchar(nl);
 	return (0);
 
 }
