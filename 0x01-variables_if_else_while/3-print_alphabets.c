@@ -7,11 +7,14 @@ int main()
 	char nl = '\n';
 
 	for (lowerCase; lowerCase <= 'z'; lowerCase++)
+	{
 		putchar(lowerCase);
+	}
 
 	for (upperCase; upperCase <= 'Z'; upperCase++)
+	{
 		putchar(upperCase);
-	
+	}
 
 	putchar(nl);
 
