@@ -1,17 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-
-/* betty style doc for function main goes there */
 /**
- *Main - Function to determine if random number is positive or negative
- *@void
+ * main - code to check if a num is positive or negative
  *
- * Description: This function generates a random number and determines
- * it the number is positive, negative or is zero
- * Return: Return zero
+ * Return: Output is 0
  */
 int main(void)
 {
