@@ -3,7 +3,6 @@
 int main()
 {
 	char lowerCase = 'a';
-	char upperCase = 'A';
 	char nl = '\n';
 
 	while (lowerCase <= 'z')
