@@ -6,26 +6,20 @@ int main()
 	int comma = 44;
 	int new_line = 10;
 	int space = 32;
-
-	
+		
 	while (n <= 57)
 	{
-		if (n < 57)
-		{
+		if (n <= 57)
 			putchar(n);
-			putchar(comma);
-			putchar(space);
-		}
-
 		if (n == 57)
-		{
-			putchar(n);
-			putchar(new_line);
-		}
+			break;
 		n++;
+		putchar(comma);
+		putchar(space);
+
 	}
-
+	putchar(new_line);
+	
+	
 	return (0);
-
 }
-
