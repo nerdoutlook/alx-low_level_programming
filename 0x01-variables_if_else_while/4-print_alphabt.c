@@ -14,13 +14,6 @@ int main()
 		}
 		lowerCase++;
 	}
-
-	while (upperCase <= 'Z')
-	{
-		putchar(upperCase);
-		upperCase++;
-	}
-	
 	putchar(nl);
 
 	return (0);
