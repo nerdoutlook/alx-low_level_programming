@@ -1,6 +1,11 @@
 #include <stdio.h>
-
-int main()
+/**
+ * main - This function prints all
+ * Characters of the alphabt except q & e
+ *
+ * Return: Returns 0
+ */
+int main(void)
 {
 	char lowerCase = 'a';
 	char nl = '\n';
@@ -14,6 +19,5 @@ int main()
 		lowerCase++;
 	}
 	putchar(nl);
-
 	return (0);
 }
