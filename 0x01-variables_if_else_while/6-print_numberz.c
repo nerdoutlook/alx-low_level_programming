@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>
+
 /**
  * main - This function prints 0 to 9
  *
@@ -7,11 +7,14 @@
  */
 int main(void)
 {
-	int n = 0;
+	int n;
 
-	for (n = 0; n <= 9; n++)
+	for (n = 48; n <= 57; n++)
 	{
-		write(n);
+		putchar(n);
+
 	}
+	putchar('\n');
+
 	return (0);
 }
