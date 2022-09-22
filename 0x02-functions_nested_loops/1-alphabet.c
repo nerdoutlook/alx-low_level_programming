@@ -1,12 +1,19 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
- * main - Calls print_alphabet function.
+ * print_alphabet - prints letter a to z
+ * In lowercase.
  *
- * Return: Always 0.
+ * Returns: zero always.
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	int a = 97;
+
+	for (; a <= 122; a++)
+	{
+		_putchar(a);
+	}
+	_putchar('\n');
 }
