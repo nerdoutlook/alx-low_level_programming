@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define HEADER_FILE
 
+void newline(int c);
 int _putchar(int c);
 int _isupper(int c);
 int _isdigit(int c);
