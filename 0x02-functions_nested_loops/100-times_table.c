@@ -34,10 +34,10 @@ void print_times_table(int n)
 				if (j < n)
 					printf(", ");
 			}
-			if (!(n > 15 || n < 0))
-				printf("\n");
 			if (n == 0)
 				printf("%d\n", n);
+			if (!(n > 15 || n < 0))
+				printf("\n");
 		}
 	}
 }
