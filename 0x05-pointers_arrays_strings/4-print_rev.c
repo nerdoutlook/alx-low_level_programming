@@ -1,7 +1,8 @@
 #include "main.h"
 
-/** print_rev - prints a string in reverse order.
- * @*s: strint to be printed
+/**
+ * print_rev - prints a string in reverse order.
+ * @s: strint to be printed
  *
  * Return: Nothing
  */
@@ -14,10 +15,9 @@ void print_rev(char *s)
 	{
 		i++;
 	}
-	
 	for (j = i; j >= 0; j--)
 	{
 		_putchar(s[j]);
 	}
 	_putchar('\n');
-}	
+}
