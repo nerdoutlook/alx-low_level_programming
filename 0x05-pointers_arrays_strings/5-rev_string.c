@@ -13,14 +13,11 @@ void rev_string(char *s)
 	while (s[i] != '\0')
 		i++;
 
-	printf("i = %d\n", i);	
-
 	for (j = 0; j <= i; j++)
 	{
 		k = s[j];
 		s[j] = s[i - 1];
 		s[i] = k;
-		printf("s[%d] is %c | s[%d] is %c\n", j, s[j], i, s[i]);
 		i--;
 	}
 	_putchar('\n');
