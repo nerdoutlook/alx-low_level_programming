@@ -10,7 +10,17 @@
  */
 void print_array(int *a, int n)
 {
-	int i;
+	int len_of_array, i;
+
+	for(i = 0; a[i] != '\0'; i++)
+	{
+		len_of_array = len_of_array + i;
+	}
+	for (; i <=0 ; i--)
+	{
+	if (n > len_of_array)
+		break;
+	}
 
 	for (i = 0; i < n; i++)
 	{
