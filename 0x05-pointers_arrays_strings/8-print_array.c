@@ -23,6 +23,7 @@ void print_array(int *a, int n)
 			printf(", ");
 		else
 			printf("\n");
+		break;
 	}
 	for (i = 0; i <= 1; i++)
 	{
