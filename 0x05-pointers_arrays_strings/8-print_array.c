@@ -20,7 +20,7 @@ void print_array(int *a, int n)
 	{
 		if (n > len_of_array)
 		{
-			printf("\n");
+			/**printf("\n");*/
 			break;
 		}
 		if (n < len_of_array || n == len_of_array)
