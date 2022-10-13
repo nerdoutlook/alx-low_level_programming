@@ -17,12 +17,12 @@ void print_array(int *a, int n)
 		len_of_array = len_of_array + i;
 	}
 	for (i = 0; i < n; i++)
-	{/**
+	{
 		if (n > len_of_array || n <= 0)
 		{
 			printf("\n");
 			break;
-		}*/
+		}
 		if (n < len_of_array || n == len_of_array)
 		{
 			printf("%d", *(a + i));
