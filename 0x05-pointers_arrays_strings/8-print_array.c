@@ -23,10 +23,13 @@ void print_array(int *a, int n)
 			printf("\n");
 			break;
 		}
-		printf("%d", *(a + i));
-		if (n - 1 > i)
-			printf(", ");
-		else
+		if (n < len_of_array || n == len_of_array)
+		{
+			printf("%d", *(a + i));
+			if (n - 1 > i)
+				printf(", ");
+			else
 			printf("\n");
+		}
 	}
 }
