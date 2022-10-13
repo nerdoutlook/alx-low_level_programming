@@ -18,7 +18,7 @@ void print_array(int *a, int n)
 	}
 	for (i = 0; i < n; i++)
 	{
-		if (n > len_of_array)
+		if (n > len_of_array || n < 0)
 		{
 			printf("\n");
 			break;
