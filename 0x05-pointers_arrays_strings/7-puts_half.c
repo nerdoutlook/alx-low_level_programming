@@ -18,7 +18,7 @@ void puts_half(char *str)
 	length_of_string = i + 1;
 
 	n = (length_of_string - 1) / 2;
-	for (j = 0; j <= n; j++)
+	for (j = 0; j < n; j++)
 	{
 		if (*str == '\0' || *str == '\n')
 			break;
@@ -27,4 +27,5 @@ void puts_half(char *str)
 		else
 			_putchar(str[j]);
 	}
+	_putchar('\n');
 }
