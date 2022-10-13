@@ -12,14 +12,14 @@ void print_array(int *a, int n)
 {
 	int len_of_array, i;
 
-	for(i = 0; a[i] != '\0'; i++)
+	for (i = 0; a[i] != '\0'; i++)
 	{
 		len_of_array = len_of_array + i;
 	}
 	for (i = 1; i >= 0 ; i--)
 	{
 	if (n > len_of_array)
-		break;
+		printf('\n');
 	}
 
 	for (i = 0; i < n; i++)
