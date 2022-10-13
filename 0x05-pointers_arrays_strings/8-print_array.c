@@ -18,16 +18,15 @@ void print_array(int *a, int n)
 	}
 	for (i = 0; i < n; i++)
 	{
+		if (n > len_of_array)
+		{
+			printf("\n");
+			break;
+		}
 		printf("%d", *(a + i));
 		if (n - 1 > i)
 			printf(", ");
 		else
 			printf("\n");
-		break;
-	}
-	for (i = 0; i <= 1; i++)
-	{
-	if (n > len_of_array)
-		printf("\n");
 	}
 }
