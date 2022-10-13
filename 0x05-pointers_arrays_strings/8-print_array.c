@@ -24,7 +24,7 @@ void print_array(int *a, int n)
 		else
 			printf("\n");
 	}
-	for (i = 1; i >= i; i--)
+	for (i = 0; i <= 1; i++)
 	{
 	if (n > len_of_array)
 		printf("\n");
