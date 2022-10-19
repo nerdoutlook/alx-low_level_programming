@@ -9,11 +9,16 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, k;
- 
+	int i, k, len;
 
-	k = get_str_length(dest);
-	printf("k = %d\n", k);
+	len = 0;
+	while (*dest != '\0')
+	{
+		len++;
+		dest++;
+	}
+
+	k = len;
 
 	for (i = 0 ; src[i] != '\0' ; i++)
 		dest[k + i] = src[i];
