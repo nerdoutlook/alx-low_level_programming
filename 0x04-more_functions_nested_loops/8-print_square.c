@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_triangle - draws a right angled triangle
+ * print_square - draws a right angled triangle
  * @size: determines length of the triangle
  *
  * Return: nothing
