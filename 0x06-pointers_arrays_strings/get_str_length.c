@@ -4,7 +4,7 @@
  * get_str_length - gets length of string
  * @dest: string to be checked
  *
- * Return: length of sting
+ * Return: length of sting as an int
  */
 int get_str_length(char *str)
 {
