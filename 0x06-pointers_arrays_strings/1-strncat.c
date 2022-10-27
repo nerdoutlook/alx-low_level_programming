@@ -10,17 +10,23 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int len, i;
+	int i, len;
 	char j;
 
-	len = get_str_length(dest);
+	i = 0;
+	while (dest[i] != '\0')
+		i++;
 
+	len = i;
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		j = src[i];
 		dest[len + i] = j;
 	}
-	len = get_str_length(dest);
+	
+	while (dest[i] != '\0')
+		i++;
+	len = i;
 	dest[len + 1] = '\0';
 	return (dest);
 }
