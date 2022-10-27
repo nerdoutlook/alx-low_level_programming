@@ -14,25 +14,20 @@ char *_strncpy(char *dest, char *src, int n)
 	int i, len;
 	char j;
 
-	len = 0;
-	len = get_str_length(dest);
-	/*len2 = get_str_length(src);*/
+	i = 0;
+	while (dest[i] != '\0')
+		i++;
+	len = i;
 
 	for (i = 0; i < n; i++)
 	{
 		j = src[i];
 		dest[len + i] = j;
 	}
-	/*
-	if (len2 < n)
-	{
-		for (i= len2; i <= n; i++)
-		{
-			j = ' ';
-			dest[len + i] = j;
-		}
-	}*/
-	len = get_str_length(dest);
+
+	while (dest[i] != '\0')
+		i++;
+	len = i;
 	dest[len + 1] = '\0';
 	return (dest);
 }
