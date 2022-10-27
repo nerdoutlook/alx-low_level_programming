@@ -23,7 +23,6 @@ char *_strncat(char *dest, char *src, int n)
 		j = src[i];
 		dest[len + i] = j;
 	}
-	
 	while (dest[i] != '\0')
 		i++;
 	len = i;
