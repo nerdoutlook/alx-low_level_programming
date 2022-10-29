@@ -21,8 +21,6 @@ int _strcmp(char *s1, char *s2)
 		i++;
 	len2 = i;
 	
-	if (len1 > len2)
-		return (1);
 	if (len != len2)
 		return (1);
 	for (i = 0; i < len; i++)
