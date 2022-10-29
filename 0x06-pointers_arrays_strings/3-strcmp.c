@@ -20,7 +20,9 @@ int _strcmp(char *s1, char *s2)
 	while (s2[i] != '\0')
 		i++;
 	len2 = i;
-
+	
+	if (len2 > len1)
+		break;
 	if (len != len2)
 		return (1);
 	for (i = 0; i < len; i++)
