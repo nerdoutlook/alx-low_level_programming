@@ -11,8 +11,15 @@ int _strcmp(char *s1, char *s2)
 {
 	int i, len, len2;
 
-	len = get_str_length(s1);
-	len2 = get_str_length(s2);
+	i = 0;
+	while (s1[i] != '\0')
+		i++;
+
+	len = i;
+	i = 0;
+	while (s2[i] != '\0')
+		i++;
+	len2 = i;
 
 	if (len != len2)
 		return (1);
