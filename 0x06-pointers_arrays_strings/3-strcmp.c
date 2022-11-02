@@ -21,17 +21,13 @@ int _strcmp(char *s1, char *s2)
 		i++;
 	len2 = i;
 
-	/*
-	if (len != len2)
-		return (len - len);
-		*/
 	len2 = len2 + 0;
 	for (i = 0; i < len; i++)
 	{
 		if (s1[i] > s2[i])
 			return (s2 - s1);
 		if (s2[i] < s1[i])
-		       return (s1 - s2);	
+			return (s1 - s2);
 	}
 	return (0);
 }
