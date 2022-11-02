@@ -9,14 +9,14 @@ void puts_half(char *str)
 {
 	int i, n, length_of_string, j;
 
-	i = 0;
 	for (i = 0; str[i] != '\0'; i++)
 
 	length_of_string = i;
 
 	n = (length_of_string - 1) / 2;
+	i = length_of_string / 2;
 
-	for (j = 0; j < n; j++)
+	for (j = i; j <= length_of_string; j++)
 	{
 		if (*str == '\0' || *str == '\n')
 			break;
