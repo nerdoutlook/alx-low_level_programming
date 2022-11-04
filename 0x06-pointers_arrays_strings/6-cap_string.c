@@ -12,6 +12,8 @@ char *cap_string(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
+		if (*str == EOF)
+			break;
 		if (str[i] == ' ' || str[i] == '.' || str[i] == '?')
 		{
 			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
