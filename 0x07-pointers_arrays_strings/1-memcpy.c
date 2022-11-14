@@ -11,15 +11,15 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
-	int len;
+	int length;
 
-	len = (int)sizeof(dest) / (int)sizeof(dest[0]);
+	length = (int)sizeof(dest) / (int)sizeof(dest[0]);
 
-	if (len <= (int)n)
+	if (length <= (int)n)
 	{
 		for (i = 0; i < n; i++)
 		{
-			dest[len + i] = src[i];
+			dest[length + i] = src[i];
 		}
 	}
 	return (dest);
