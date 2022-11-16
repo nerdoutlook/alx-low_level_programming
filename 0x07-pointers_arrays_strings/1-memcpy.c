@@ -12,9 +12,14 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int j;
 
-	for (j = 0; j <= n; j++)
+	unsigned int length;
+
+	length = (int)sizeof(dest) / (int)sizeof(dest[0]);;
+
+	for (j = 0; j < length; j++)
 	{
-		dest[j] = src[j];
+		if (!(j > n))
+			dest[j] = src[j];
 	}
 	return (dest);
 }
