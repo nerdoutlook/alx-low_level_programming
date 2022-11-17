@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _strspn - gets the length of a prefix substring
+ * @s: String
+ * @accept: String
+ *
+ * Return: number of bytes in prefix segment of s
+ */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int n, i, l, j, k;
@@ -20,5 +27,5 @@ unsigned int _strspn(char *s, char *accept)
 				j++;
 		}
 	}
-	return(j);
+	return (j);
 }
